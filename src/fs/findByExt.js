@@ -31,7 +31,7 @@ const findByExt = async () => {
   console.log(filesArray)
 
   }catch(e){
-    console.error('Error\n',e.message, '\n\n')
+    console.error('Error\n',"FS operation failed", '\n\n')
   }
  
 };

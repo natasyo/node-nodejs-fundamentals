@@ -27,12 +27,17 @@ const rootPath=process.cwd();
       }
     }
   }
-  readDirectory(rootPath)
+  try{
+    readDirectory(rootPath)
   const data={
     rootPath,
     entries
   }
   fs.writeFileSync("./src/fs/snapshot.json",JSON.stringify(data, "",2))
+  }catch(e){
+    console.error("Error\n","FS operation failed",'\n')
+  }
+  
 };
 
 await snapshot();

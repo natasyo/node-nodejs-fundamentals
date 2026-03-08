@@ -28,7 +28,7 @@ try{
  }
 }
 catch(e){
-  console.error("Error\n",e.message,'\n')
+  console.error("Error\n","FS operation failed",'\n')
 }
 
 };
