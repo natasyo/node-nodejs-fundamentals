@@ -1,3 +1,11 @@
+import { Worker } from "worker_threads";
+
+function setArrayInWorker() {
+  const worker = new Worker(`
+    const 
+    `);
+}
+
 const execCommand = () => {
   // Write your code here
   // Take command from CLI argument
